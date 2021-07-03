@@ -1,0 +1,9 @@
+Line 523
+
+            $linkId = str_replace(' ', '-' ,$text);
+            $vowels = array("*", "(", ")", ".", "[", "]", ";", ":");
+            $linkId = str_replace($vowels, '' ,$linkId);
+
+            $Block = array(
+                'element' => array(
+                    'name' => 'h' . min(6, $level).' id="'.$linkId.'"',
